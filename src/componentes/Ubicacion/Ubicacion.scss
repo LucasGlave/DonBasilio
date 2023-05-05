@@ -1,0 +1,14 @@
+#UBICACION{
+    height: 100vh;
+    width: 100vw;
+    background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b); //#5c4838
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        margin-top: 110px;
+    }
+}

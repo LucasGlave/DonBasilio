@@ -1,0 +1,48 @@
+#CLIENTES{
+    height: 100vh;
+    width: 100vw;
+    // background-color: #5c4838;
+    background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        .images{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            img{
+                border-radius: 15px;
+            }
+            
+        }
+    }
+    .fotos{
+        width: 70rem;
+        height: 48rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        flex-wrap: nowrap;
+        margin-top: 14px;
+        background-color: rgb(139 112 90 / 94%);
+        justify-content: center;
+        box-shadow: 10px 10px 30px rgb(12, 12, 12);
+        .btn{
+            width: 13rem;
+            height: 4rem;
+            margin-top: 30px;
+        }
+    }
+    h2{
+        width: 100vw;
+        height: 4rem;
+        margin-bottom: 14px;
+    }
+}

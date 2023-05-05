@@ -1,0 +1,16 @@
+#SACARTURNO{
+    height: 100vh;
+    width: 100vw;
+    background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    .calendly{
+        .calendly-inline-widget{
+            width: 90rem;
+            height: 90rem;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.header{
+    background: -webkit-linear-gradient(top, #000000 70%, #202020);
+    width: 100vw;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    img{
+        margin-top: 121px;
+        animation: slideInBottom 2.5s;
+        position: absolute;
+        z-index: 1;
+    }
+}
+    .nav{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+        }
+        h6{
+            list-style: none;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            color: white;   
+        }
+        .rightN{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            animation: slideInRight 2.5s;
+        }
+        .leftN{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            animation: slideInLeft 2.5s;
+        }
+    }
+    
+
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-550px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(550px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
