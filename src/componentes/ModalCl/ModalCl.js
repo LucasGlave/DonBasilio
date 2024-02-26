@@ -20,22 +20,22 @@ const ModalCl = () => {
       <img src='./IMG_2859.PNG' width={200} height={200} alt='img2'className='logo'></img>
         <Row className="two-columns-grid">
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3294.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3294.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3299.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3299.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3298.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3298.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3297.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3297.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3293.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3293.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3294.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body><img src='./IMG_3294.webp' width={520} height={624} alt='img2'></img></Modal.Body>
           </Col>
         </Row>
         {/* <Modal.Footer>
