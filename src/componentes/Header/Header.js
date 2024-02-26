@@ -1,4 +1,5 @@
 import "./Header.scss";
+import OffcanvasExample from "./OffCanvas";
 
 const Header = () => {
   const sections = document.querySelectorAll("section"),
@@ -33,7 +34,9 @@ const Header = () => {
             <h6>SACAR TURNO</h6>
           </a>
         </div>
-        <img src="./favicon.ico" width="180" height="180" alt="logo"></img>
+        <div className="not-responsive">
+            <img src="./favicon.ico" width="180" height="180" alt="logo"></img>  
+        </div>
         <div className="rightN">
           <a data-scroll="CLIENTES" href="#CLIENTES">
             <h6>CLIENTES</h6>
@@ -44,68 +47,7 @@ const Header = () => {
         </div>
       </div>
       {/* navbar responsive */}
-      <nav className="navbar nav-responsive">
-        <div className="container-fluid">
-          <div className="d-flex justify-content-between align-items-center">
-            <a className="navbar-brand" href="#">
-              <img src="./favicon.ico" alt="logo" />
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            className="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div className="offcanvas-header">
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="#SOBREMI"
-                  >
-                    SOBRE MI
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#SACARTURNO">
-                    SACAR TURNO
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#CLIENTES">
-                    CLIENTES
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#UBICACION">
-                    UBICACION
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <OffcanvasExample />
     </div>
   );
 };

@@ -12,7 +12,7 @@ function App() {
       <Footer/>
       <SobreMi/>
       <SacarTurno/>
-      <Clientes/>
+      {/* <Clientes/> */}
       <Ubicacion/>
       <Header/>
     </div>
