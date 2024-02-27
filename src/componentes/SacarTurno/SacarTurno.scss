@@ -1,16 +1,30 @@
 #SACARTURNO {
   height: 100vh;
   width: 100vw;
-  background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
+  background: #614c3b;
   display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem;
+  position: relative;
   iframe {
     width: 90rem;
     height: 703px;
+  }
+  .imgBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: blur(0px);
+    box-shadow: 0 -10px 20px rgb(0, 0, 0),
+    5px 10px 20px rgb(0, 0, 0);
   }
 }
 
@@ -21,7 +35,6 @@
     display: flex;
     padding: 10px;
     margin: auto;
-     
   }
   .calendly-container {
     display: flex;
@@ -31,13 +44,13 @@
     
   }
   .calendly-container::-webkit-scrollbar {
-    width: 1px; /* Ancho de la barra de desplazamiento */
+    width: 0px; /* Ancho de la barra de desplazamiento */
   }
   .calendly-container::-webkit-scrollbar-thumb {
     background-color: transparent; /* Color de fondo de la barra de desplazamiento */
   }
   iframe::-webkit-scrollbar {
-    width: 1px; /* Ancho de la barra de desplazamiento */
+    width: 0px; /* Ancho de la barra de desplazamiento */
   }
   iframe::-webkit-scrollbar-thumb {
     background-color: transparent; /* Color de fondo de la barra de desplazamiento */

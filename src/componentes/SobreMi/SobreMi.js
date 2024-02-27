@@ -1,5 +1,6 @@
 import './SobreMi.scss'
 import Reveal from '../Reveal';
+import Typewriter from '../Typewriter';
 
 const SobreMi = () =>{
     return(
@@ -9,13 +10,14 @@ const SobreMi = () =>{
             <Reveal>
                 <div className='sm-content'>
                     <div className='content-left'>
-                        <h1>
-                            DON BASILIO DONDE LA ELEGANCIA SE ENCUENTRA CON LA INNOVACION.
-                        </h1>
+                        <div className='typewriter'>
+                            <h1>DON BASILIO</h1>
+                            <Typewriter />
+                        </div>
                     </div>
                     <div className='content-right'>
                         <button className='button1'>SACAR TURNO</button>
-                        <button className='button2'>NO ME ACUERDO</button>
+                        <button className='button2'>CLIENTES</button>
                     </div>
                 </div>
             </Reveal>

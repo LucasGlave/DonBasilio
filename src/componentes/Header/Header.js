@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./Header.scss";
 import OffcanvasExample from "./OffCanvas";
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const Header = () => {
   const sections = document.querySelectorAll("section"),
@@ -23,8 +25,25 @@ const Header = () => {
     });
   };
   document.addEventListener("scroll", handleScroll);
+  const { scrollY } = useScroll()
+  const [hidden, setHidden] = useState(false)
+  useMotionValueEvent(scrollY, "change", (latest)=>{
+    const previous = scrollY.getPrevious()
+    if(latest > previous && latest > 150){
+      setHidden(true)
+    }else{
+      setHidden(false)
+    }
+  })
   return (
-    <div className="header">
+    <motion.div
+      variants={{
+        visible: { y:0 },
+        hidden: { y:"-120%" }
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut"}}
+      className="header">
       <div className="nav">
         <div className="leftN">
           <a data-scroll="SOBREMI" href="#SOBREMI" className="active">
@@ -48,7 +67,7 @@ const Header = () => {
       </div>
       {/* navbar responsive */}
       <OffcanvasExample />
-    </div>
+    </motion.div>
   );
 };
 
