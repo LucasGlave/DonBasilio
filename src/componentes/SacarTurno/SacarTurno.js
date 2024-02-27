@@ -5,6 +5,7 @@ import { InlineWidget } from "react-calendly";
 const SacarTurno = () => {
   return (
     <section id="SACARTURNO">
+      <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
       <Reveal>
         <h2>- SACAR TURNO -</h2>
         <div className="calendly-container">

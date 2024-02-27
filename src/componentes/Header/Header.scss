@@ -1,6 +1,6 @@
 .header {
   background: -webkit-linear-gradient(top, #000000, #20202000);
-  min-width: 100vw;
+  width: 100vw;
   height: 12rem;
   display: flex;
   justify-content: center;
@@ -14,42 +14,43 @@
     position: absolute;
     z-index: 1;
   }
-}
-
-.nav {
-  min-width: 100vw;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  justify-content: space-evenly;
-  margin-top: 15px;
-  align-items: center;
-  list-style: none;
-  text-decoration: none;
-  a {
-    text-decoration: none;
-  }
-  h6 {
+  .nav {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    align-items: center;
     list-style: none;
     text-decoration: none;
-    font-size: 1em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    color: white;
-  }
-  .rightN {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    animation: slideInRight 2.5s;
-  }
-  .leftN {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    animation: slideInLeft 2.5s;
+    a {
+      text-decoration: none;
+    }
+    h6 {
+      list-style: none;
+      text-decoration: none;
+      font-size: 1em;
+      font-family: "Roboto", sans-serif;
+      font-weight: 800;
+      color: white;
+    }
+    .rightN {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      animation: slideInRight 2.5s;
+    }
+    .leftN {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      animation: slideInLeft 2.5s;
+    }
   }
 }
+
+
 
 @keyframes slideInBottom {
   from {
@@ -115,7 +116,7 @@
     display: flex;
     justify-content: flex-start;
   }
-
+}
 
 @media (min-width: 990px) {
   .nav-responsive {
