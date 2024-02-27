@@ -1,20 +1,25 @@
-#UBICACION{
-    height: 100vh;
-    width: 100vw;
-    background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b); //#5c4838
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        margin-top: 110px;
-    }
+#UBICACION {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-linear-gradient(
+    bottom,
+    #614c3b,
+    #7d624f,
+    #614c3b
+  ); //#5c4838
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-top: 110px;
+  }
+  iframe {
+    min-width: 60%;
+    min-height: 500px;
+  }
 }
 
-@media (max-width: 1095px) {
-    iframe{
-        height: 200%;
-    }
-}
+
