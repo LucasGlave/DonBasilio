@@ -1,88 +1,117 @@
-#SOBREMI{
-    height: 100vh;
-    width: 100%;
-    background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    align-items: center;
+#SOBREMI {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  position: relative;
+  .verMas {
+    z-index: 4;
+    width: 50px;
+    height: 50px;
     position: relative;
-    .verMas{
-        z-index: 4;
-        width: 50px;
+    rotate: -90deg;
+    margin-right: 8px;
+    animation: slideInfinite 1s infinite;
+  }
+  h2 {
+    margin-top: 130px;
+  }
+  .imgS {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  p {
+    position: relative;
+  }
+  .sm-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    .content-left {
+      width: 50%;
+      padding: 5rem;
+      h1 {
+        font-weight: 700;
+      }
+    }
+
+    .content-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      .button1 {
+        width: 12rem;
         height: 50px;
-        position: relative;
-        rotate: -90deg;
-        margin-right: 8px;
-        animation: slideInfinite 1s infinite;
+        background: linear-gradient(to top, #321b09, #513a28, #513a28);
+        color: #fff;
+        border-radius: 13px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .button2 {
+        width: 12rem;
+        height: 50px;
+        background: linear-gradient(to top, #9e9e9f, #ffffff, #ffffff);
+        color: black;
+        border-radius: 13px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700;
+      }
     }
-    h2{
-        margin-top: 130px;
-    }
-    .imgS{
-        width: 100%;
-        height: 100%;
-        filter: blur(3px);
-        position: absolute;
-        z-index: 0;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-    }
-    p{
-        position: relative;
-    }
-    .sm-content{
+  }
+}
+h2 {
+  font-size: 1.3em;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 769px) {
+  .imgResponsive {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgS {
+    display: none;
+  }
+  .imgResponsive {
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 720px){
+    .content-right{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 100%;
-        z-index: 10;
-        .content-left{
-            width: 50%;
-            padding: 5rem;
-            h1{
-                font-weight: 700; 
-            }
-        }
-       
-        .content-right{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            .button1 {
-                width: 12rem;
-                height: 50px;
-                background: linear-gradient(to top, #321b09, #513a28, #513a28);
-                color: #fff;
-                border-radius: 13px;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                font-weight: 700;
-
-            }
-            .button2 {
-                width: 12rem;
-                height: 50px;
-                background: linear-gradient(to top, #9e9e9f, #ffffff, #ffffff);
-                color: black;
-                border-radius: 13px;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                font-weight: 700;
-            }
-        }
     }
-}
-h2{
-    font-size: 1.3em;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    z-index: 1;
 }

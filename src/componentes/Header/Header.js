@@ -46,7 +46,7 @@ const Header = () => {
       {/* navbar responsive */}
       <nav className="navbar nav-responsive">
         <div className="container-fluid">
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="nav-responsive-container">
             <a className="navbar-brand" href="#">
               <img src="./favicon.ico" alt="logo" />
             </a>

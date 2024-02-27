@@ -5,6 +5,7 @@ const SobreMi = () =>{
     return(
         <section id='SOBREMI'>
             <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
+            <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/>
             <Reveal>
                 <div className='sm-content'>
                     <div className='content-left'>
