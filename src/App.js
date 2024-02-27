@@ -3,7 +3,7 @@ import Footer from './componentes/Header/Header';
 import Header from './componentes/Footer/Footer';
 import SobreMi from './componentes/SobreMi/SobreMi';
 import SacarTurno from './componentes/SacarTurno/SacarTurno';
-import Clientes from './componentes/Clientes/Clientes';
+// import Clientes from './componentes/Clientes/Clientes';
 import Ubicacion from './componentes/Ubicacion/Ubicacion';
 
 function App() {
