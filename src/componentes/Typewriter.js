@@ -1,16 +1,18 @@
 import React from 'react';
-import TypewriterComponent from 'typewriter-effect';
+import { TypeAnimation } from 'react-type-animation';
 
 const Typewriter = () => {
   return (
-    <TypewriterComponent
-      options={{
-        strings: ['DONDE LA ELEGANCIA SE ENCUENTRA CON LA INNOVACION.', 'UN LUGAR DEDICADO A LA IMAGEN DE ELLOS'],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 10,
-        typeSpeed: 10
-      }}
+    <TypeAnimation
+      sequence={[
+        'DONDE LA ELEGANCIA SE ENCUENTRA CON LA INNOVACION.',
+        1000,
+        'UN LUGAR DEDICADO A LA IMAGEN DE ELLOS.',
+        1000
+      ]}
+      wrapper='span'
+      speed={70}
+      repeat={Infinity}
     />
   );
 };
