@@ -14,19 +14,32 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1095px) {
   iframe {
-    max-width: 90%; /* Utiliza un porcentaje del ancho del contenedor */
-    // max-width: 400px; /* Establece un ancho máximo para evitar que el iframe sea demasiado grande en pantallas grandes */
+    max-width: 90%; 
     height: 100%;
     display: flex;
     padding: 10px;
     margin: auto;
+     
   }
-  .calendly-container{
+  .calendly-container {
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
+    
+  }
+  .calendly-container::-webkit-scrollbar {
+    width: 1px; /* Ancho de la barra de desplazamiento */
+  }
+  .calendly-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color de fondo de la barra de desplazamiento */
+  }
+  iframe::-webkit-scrollbar {
+    width: 1px; /* Ancho de la barra de desplazamiento */
+  }
+  iframe::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color de fondo de la barra de desplazamiento */
   }
 }
