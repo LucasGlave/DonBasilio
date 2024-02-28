@@ -6,12 +6,12 @@ const Typewriter = () => {
     <TypeAnimation
       sequence={[
         'DONDE LA ELEGANCIA SE ENCUENTRA CON LA INNOVACION.',
-        1000,
+        1500,
         'UN LUGAR DEDICADO A LA IMAGEN DE ELLOS.',
-        1000
+        1500
       ]}
       wrapper='span'
-      speed={70}
+      speed={60}
       repeat={Infinity}
     />
   );
