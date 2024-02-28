@@ -8,10 +8,13 @@ const SacarTurno = () => {
       <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
       <Reveal>
         <h2>- SACAR TURNO -</h2>
-        <div className="calendly-container">
-          <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
-        </div>
       </Reveal>
+      <Reveal>
+        {/* <div className="calendly-container"> */}
+          <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
+        {/* </div> */}
+      </Reveal>
+
     </section>
   );
 };

@@ -5,8 +5,10 @@ import Typewriter from '../Typewriter';
 const SobreMi = () =>{
     return(
         <section id='SOBREMI'>
-            <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
-            <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/>
+            <div className='div-img'>
+                <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
+                <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/> 
+            </div>
             <Reveal>
                 <div className='sm-content'>
                     <div className='content-left'>

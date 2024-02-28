@@ -1,6 +1,7 @@
 .footer-back {
   background: -webkit-linear-gradient(bottom, #000000 70%, #202020);
   width: 100vw;
+  position: relative;
   .footer-desktop {
     width: 100%;
     height: 12rem;
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    color: #9a9a9a;
+    color: white;
     .footIzq {
       display: flex;
       flex-direction: row;

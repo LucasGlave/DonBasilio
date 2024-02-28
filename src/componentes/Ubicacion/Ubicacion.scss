@@ -10,15 +10,17 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     margin-top: 110px;
+    position: relative;
   }
   iframe {
     min-width: 60%;
     min-height: 500px;
+    position: relative;
   }
 }
 
