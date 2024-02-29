@@ -11,10 +11,16 @@
     max-width: 50%;
   }
 
-.verMas{
-  box-sizing: border-box;
-  border-color: white;
-  color: white;
+  .verMas {
+    width: 12rem;
+    height: 50px;
+    background: linear-gradient(to top, #9e9e9f, #ffffff, #ffffff);
+    color: black;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .modal-content{

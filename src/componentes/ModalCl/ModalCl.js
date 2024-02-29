@@ -1,6 +1,6 @@
 import './ModalCl.scss';
 import { useState } from 'react';
-import { Modal, Button, Row, Col } from 'react-bootstrap';
+import { Modal, Row, Col } from 'react-bootstrap';
 
 const ModalCl = () => {
   const [show, setShow] = useState(false);
@@ -12,12 +12,12 @@ const ModalCl = () => {
 
   return (
     <div className='modalCliente'> 
-      <Button variant='' onClick={handleShow} className='verMas'>
-        Ver más
-      </Button> 
+      <button onClick={handleShow} className='verMas'>
+        CLIENTES
+      </button> 
 
       <Modal show={show} onHide={handleClose} className='modalFlex' size='xl'>
-      <img src='./IMG_2859.PNG' width={200} height={200} alt='img2'className='logo'></img>
+      <img src='./favicon.ico' width={200} height={200} alt='img2'className='logo'></img>
         <Row className="two-columns-grid">
           <Col md={6}>
             <Modal.Body><img src='./IMG_3294.webp' width={520} height={624} alt='img2'></img></Modal.Body>
