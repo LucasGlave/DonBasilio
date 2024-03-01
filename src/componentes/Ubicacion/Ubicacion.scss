@@ -10,7 +10,12 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  .fondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -18,8 +23,8 @@
     position: relative;
   }
   iframe {
-    min-width: 60%;
-    min-height: 500px;
+    min-width: 100%;
+    min-height: 550px;
     position: relative;
   }
 }
