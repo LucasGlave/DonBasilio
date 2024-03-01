@@ -16,7 +16,7 @@ function FooterResponsive() {
 
         <h6>donbasilio@gmail.com</h6>
       </div>
-      <img src="./favicon.ico" width="150" height="150" alt="img2"></img>
+      <img src="./favicon.ico" alt="img2" className="logo-footer"></img>
       <div className="footDer">
         <div className="phone-container">
           <FaPhone />

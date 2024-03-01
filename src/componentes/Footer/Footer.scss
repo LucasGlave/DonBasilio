@@ -12,6 +12,7 @@
     justify-content: center;
     gap: 2rem;
     color: white;
+
     .footIzq {
       display: flex;
       flex-direction: row;
@@ -22,6 +23,10 @@
         display: flex;
         gap: 10px;
       }
+    }
+    .logo-footer {
+      height: 150px;
+      width: 150px;
     }
     .footDer {
       display: flex;
@@ -74,25 +79,28 @@
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 2rem;
-      color: #9a9a9a;
+      color: white;
       .footIzq {
         display: flex;
         flex-direction: row;
-        width: 30rem;
-        align-items: center;
-        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
         .social-media {
           display: flex;
           gap: 15px;
         }
       }
+      .logo-footer {
+        height: 150px;
+        width: 150px;
+      }
       .footDer {
         display: flex;
-        flex-direction: row;
-        width: 30rem;
-        color: black;
+        align-items: center;
+        width: 100%;
+
         .phone-container {
           display: flex;
           gap: 10px;
@@ -104,6 +112,62 @@
   @media (min-width: 1159px) {
     .footer-responsive {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .footer-responsive {
+    padding: 0px 20px;
+    .footIzq {
+      flex-direction: column !important;
+      .social-media {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+    .footDer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .phone-container {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 475px) {
+  .footer-responsive {
+    height: auto;
+    padding: 5px 20px;
+    flex-direction: column;
+    gap: 5px !important;
+    .footIzq {
+      flex-direction: row !important;
+      .social-media {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+    .logo-footer {
+      height: 100px !important;
+      width: 100px !important;
+    }
+    .footDer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .phone-container {
+        display: flex;
+        gap: 10px;
+      }
     }
   }
 }

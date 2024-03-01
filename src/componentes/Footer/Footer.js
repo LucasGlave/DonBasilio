@@ -22,7 +22,7 @@ const Footer = () => {
               <h6> +54 2923 000000</h6>
             </div>
           </div>
-          <img src="./favicon.ico" width="150" height="150" alt="img2"></img>
+          <img src="./favicon.ico" alt="img2" className="logo-footer"></img>
           <div className="footDer">
             <div className="nav-footer">
               <a data-scroll="SOBREMI" href="#SOBREMI" className="active">
