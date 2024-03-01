@@ -4,30 +4,63 @@
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     .fix{
         position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         inset: 0;
         padding: 0 20% 0 20%;
-        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.548));
         .cardSM{
-            background-color: rgba(0, 0, 0, 0.128);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 6%;
+            flex-direction: column;
+            background: linear-gradient(to top, transparent, rgb(0 0 0 / 30%));
             width: 80%;
             height: 80%;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            h4 {
-                font-size: 8px;
-                line-height: 1.5;
-                color: #333;
-                span {
-                    color: aqua;
-                    font-weight: 800;
+            box-shadow: 0 10px 40px rgb(0 0 0);
+        }
+    }
+    p {
+        font-size: 18px;
+        color: white;
+        text-align: left;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    #SOBREMI{
+       .fix{
+            padding: 0;
+            .cardSM{
+                width: 95%;
+            }
+        }
+    }
+    
+}
+@media(max-width: 500px){
+    #SOBREMI{
+       .fix{
+            padding: 0;
+            .cardSM{
+                width: 95%;
+                p{
+                    font-size: 14px;
                 }
             }
         }
     }
+    
 }
