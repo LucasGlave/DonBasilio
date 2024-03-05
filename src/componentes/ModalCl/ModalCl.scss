@@ -14,10 +14,11 @@
 .verMas {
   width: 12rem;
   height: 50px;
-  background: linear-gradient(to top, #9e9e9f, #ffffff, #ffffff);
-  color: black;
+  background: transparent;
+  border: 2px solid #90634b;
+  color: #90634b;
+  backdrop-filter: blur(40px);
   border-radius: 13px;
-  border: none;
   outline: none;
   cursor: pointer;
   font-weight: 700;

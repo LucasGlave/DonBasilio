@@ -14,13 +14,15 @@ const HomePage = () =>{
                 <div className='sm-content'>
                     <div className='content-left'>
                         <div className='typewriter'>
-                            <h1>DON BASILIO</h1>
+                            <div className='title'>
+                                <h1 className='don'>DON</h1>
+                                <h1 className='basilio'>BASILIO</h1>
+                            </div>
                             <Typewriter />
                         </div>
                     </div>
                     <div className='content-right'>
                         <button className='button1'>SACAR TURNO</button>
-                        {/* <button on onClick={{}} className='button2'>CLIENTES</button> */}
                         <ModalCl />
                     </div>
                 </div>
