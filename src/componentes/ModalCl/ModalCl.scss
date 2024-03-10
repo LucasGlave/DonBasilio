@@ -50,7 +50,12 @@
     margin: auto;
   }
 }
-
+.modal-header {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .two-columns-grid > * {
     flex: 1 0 100%; /* Cambiar el tamaño de las columnas a 100% en dispositivos más pequeños */
@@ -62,7 +67,7 @@
   .modal-content {
     padding: 10%;
 
-    .logo{
+    .logo {
       width: 30%;
       height: 30%;
     }
@@ -71,5 +76,29 @@
       // height: 80%;
       object-fit: cover;
     }
+  }
+}
+
+//Preguntar lucas
+@media (min-width: 769px) {
+  .closeModalButton {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .closeModalButton {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .headerContainer {
+    position: absolute;
+    display: flex;
+    width: 83%;
+    justify-content: end;
+    margin-bottom: 12%;
+    background-color: transparent;
   }
 }
