@@ -1,6 +1,6 @@
-import './ModalCl.scss';
-import { useState } from 'react';
-import { Modal, Button, Row, Col } from 'react-bootstrap';
+import "./ModalCl.scss";
+import { useState } from "react";
+import { Modal, Row, Col } from "react-bootstrap";
 
 const ModalCl = () => {
   const [show, setShow] = useState(false);
@@ -8,34 +8,50 @@ const ModalCl = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-    // variant="light"
+  // variant="light"
 
   return (
-    <div className='modalCliente'> 
-      <Button variant='' onClick={handleShow} className='verMas'>
-        Ver más
-      </Button> 
+    <div className="modalCliente">
+      <button onClick={handleShow} className="verMas">
+        CLIENTES
+      </button>
 
-      <Modal show={show} onHide={handleClose} className='modalFlex' size='xl'>
-      <img src='./IMG_2859.PNG' width={200} height={200} alt='img2'className='logo'></img>
+      <Modal show={show} onHide={handleClose} className="modalFlex" size="xl">
+        <img
+          src="./favicon.ico"
+          alt="img2"
+          className="logo"
+        ></img>
         <Row className="two-columns-grid">
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3294.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3294.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3299.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3299.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3298.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3298.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3297.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3297.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3293.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3293.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
           <Col md={6}>
-            <Modal.Body><img src='./IMG_3294.JPG' width={520} height={624} alt='img2'></img></Modal.Body>
+            <Modal.Body>
+              <img src="./IMG_3294.webp" alt="img2"></img>
+            </Modal.Body>
           </Col>
         </Row>
         {/* <Modal.Footer>
@@ -46,6 +62,6 @@ const ModalCl = () => {
       </Modal>
     </div>
   );
-}
+};
 
 export default ModalCl;

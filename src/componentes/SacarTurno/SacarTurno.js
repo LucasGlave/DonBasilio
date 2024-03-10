@@ -1,19 +1,22 @@
-import './SacarTurno.scss'
-import { PopupWidget } from 'react-calendly'
+import Reveal from "../Reveal";
+import "./SacarTurno.scss";
 import { InlineWidget } from "react-calendly";
 
+const SacarTurno = () => {
+  return (
+    <section id="SACARTURNO">
+      <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
+      <Reveal>
+        <h2>- SACAR TURNO -</h2>
+      </Reveal>
+      <Reveal>
+        <div className="calendlyCard">
+          <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
+        </div>
+      </Reveal>
 
-const SacarTurno = () =>{
+    </section>
+  );
+};
 
-
-    return(
-        <section id='SACARTURNO'>
-            <h2>- SACAR TURNO -</h2>
-            <div className='calendly'>
-                <InlineWidget url="https://calendly.com/donbasilio/60min?primary_color=d1ad65" className='calendar'/>
-            </div>
-        </section>
-    )
-}
-
-export default SacarTurno
+export default SacarTurno;
