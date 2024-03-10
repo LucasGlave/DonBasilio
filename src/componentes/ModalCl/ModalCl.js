@@ -1,6 +1,7 @@
 import "./ModalCl.scss";
 import { useState } from "react";
 import { Modal, Row, Col } from "react-bootstrap";
+import { IoClose } from "react-icons/io5";
 
 const ModalCl = () => {
   const [show, setShow] = useState(false);
@@ -15,13 +16,13 @@ const ModalCl = () => {
       <button onClick={handleShow} className="verMas">
         CLIENTES
       </button>
-
       <Modal show={show} onHide={handleClose} className="modalFlex" size="xl">
-        <img
-          src="./favicon.ico"
-          alt="img2"
-          className="logo"
-        ></img>
+        <Modal.Header>
+          <div className="headerContainer">
+            <IoClose className="closeModalButton" onClick={handleClose} />
+          </div>
+        </Modal.Header>
+        <img src="./favicon.ico" alt="img2" className="logo"></img>
         <Row className="two-columns-grid">
           <Col md={6}>
             <Modal.Body>
@@ -55,10 +56,11 @@ const ModalCl = () => {
           </Col>
         </Row>
         {/* <Modal.Footer>
-        <Button variant="dark" size='lg' onClick={handleClose}>
-          Cerrar
-        </Button> 
-      </Modal.Footer> */}
+          <IoIosCloseCircle
+            className="closeModalButton"
+            onClick={handleClose}
+          />
+        </Modal.Footer> */}
       </Modal>
     </div>
   );
