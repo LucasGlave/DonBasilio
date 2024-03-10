@@ -12,6 +12,11 @@ html {
   scrollbar-width: none;
 }
 
+@font-face {
+  font-family: 'Hermona';
+  src: url('../public/Hermona.ttf') format('truetype');
+}
+
 // .App-header {
 //   background-color: #282c34;
 //   min-height: 100vh;
