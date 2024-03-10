@@ -21,7 +21,7 @@ const SobreMi = () => {
                     Me encanta hablar con mis clientes mientras les corto el pelo y conocer sus historias y experiencias de vida. Muchas veces, estas conversaciones se convierten en amistades duraderas.
                   </p>
                 </Reveal>
-                <Reveal className='reveal'>
+                <Reveal className='reveal pDisplay'>
                   <p>
                     Además de ser un peluquero en Darregueira, también he participado en eventos de moda y peluquería en toda la provincia, lo que me ha permitido expandir mis habilidades y mantenerme actualizado con las últimas tendencias y estilos.
                   </p>

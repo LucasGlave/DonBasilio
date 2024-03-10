@@ -17,11 +17,12 @@
   background: transparent;
   border: 2px solid #90634b;
   color: #90634b;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(15px);
   border-radius: 13px;
   outline: none;
   cursor: pointer;
   font-weight: 700;
+  -webkit-backdrop-filter: grayscale(15px);
 }
 
 .modal-content {
