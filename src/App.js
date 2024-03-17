@@ -14,9 +14,10 @@ function App() {
       <HomePage/>
       <SobreMi/>
       <SacarTurno/>
-      {/* <Clientes/> */}
-      <Ubicacion/>
-      <Header/>
+      <div>
+        <Ubicacion/>
+        <Header/>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import "./ModalCl.scss";
 import { useState } from "react";
 import { Modal, Row, Col } from "react-bootstrap";
+import { IoClose } from "react-icons/io5";
+import Reveal from "../Reveal";
 
 const ModalCl = () => {
   const [show, setShow] = useState(false);
@@ -15,50 +17,57 @@ const ModalCl = () => {
       <button onClick={handleShow} className="verMas">
         CLIENTES
       </button>
-
       <Modal show={show} onHide={handleClose} className="modalFlex" size="xl">
-        <img
-          src="./favicon.ico"
-          alt="img2"
-          className="logo"
-        ></img>
-        <Row className="two-columns-grid">
+        <Modal.Header  onClick={handleClose}>
+          <div className="headerContainer">
+            <IoClose className="closeModalButton" onClick={handleClose} />
+          </div>
+        </Modal.Header>
+        <img src="./favicon.ico" alt="img2" className="logo"></img>
+        <Row className="two-columns-grid"  onClick={handleClose}>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3294.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3294.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3299.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3299.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3298.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3298.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3297.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3297.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3293.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3293.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <Modal.Body>
-              <img src="./IMG_3294.webp" alt="img2"></img>
-            </Modal.Body>
+            <Reveal>
+              <Modal.Body>
+                <img src="./IMG_3294.webp" alt="img2"></img>
+              </Modal.Body>
+            </Reveal>
           </Col>
         </Row>
-        {/* <Modal.Footer>
-        <Button variant="dark" size='lg' onClick={handleClose}>
-          Cerrar
-        </Button> 
-      </Modal.Footer> */}
       </Modal>
     </div>
   );

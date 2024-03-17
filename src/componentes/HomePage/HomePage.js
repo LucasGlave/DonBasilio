@@ -5,7 +5,7 @@ import ModalCl from '../ModalCl/ModalCl';
 
 const HomePage = () =>{
     return(
-        <section id='HOMEPAGE'>
+        <section id='CLIENTES'>
             <div className='div-img'>
                 <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
                 <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/> 
@@ -18,11 +18,20 @@ const HomePage = () =>{
                                 <h1 className='don'>DON</h1>
                                 <h1 className='basilio'>BASILIO</h1>
                             </div>
-                            <Typewriter />
+                            <div className='responsiveDesktop'>
+                                <Typewriter />
+                            </div>
+                            <div className='responsiveMobile'>
+                                <h3>
+                                    UN LUGAR DEDICADO A LA IMAGEN DE ELLOS.
+                                </h3>
+                            </div>
                         </div>
                     </div>
                     <div className='content-right'>
-                        <button className='button1'>SACAR TURNO</button>
+                        <a data-scroll="SACARTURNO" href="#SACARTURNO" className="active button1">
+                            SACAR TURNO
+                        </a>
                         <ModalCl />
                     </div>
                 </div>

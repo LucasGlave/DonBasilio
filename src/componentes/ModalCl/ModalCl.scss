@@ -11,20 +11,6 @@
   max-width: 50%;
 }
 
-.verMas {
-  width: 12rem;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #90634b;
-  color: #90634b;
-  backdrop-filter: blur(15px);
-  border-radius: 13px;
-  outline: none;
-  cursor: pointer;
-  font-weight: 700;
-  -webkit-backdrop-filter: grayscale(15px);
-}
-
 .modal-content {
   background-color: rgb(0 0 0 / 53%);
   border-radius: 15px;
@@ -51,7 +37,12 @@
     margin: auto;
   }
 }
-
+.modal-header {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .two-columns-grid > * {
     flex: 1 0 100%; /* Cambiar el tamaño de las columnas a 100% en dispositivos más pequeños */
@@ -63,7 +54,7 @@
   .modal-content {
     padding: 10%;
 
-    .logo{
+    .logo {
       width: 30%;
       height: 30%;
     }
@@ -72,5 +63,29 @@
       // height: 80%;
       object-fit: cover;
     }
+  }
+}
+
+//Preguntar lucas
+@media (min-width: 769px) {
+  .closeModalButton {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .closeModalButton {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .headerContainer {
+    position: absolute;
+    display: flex;
+    width: 83%;
+    justify-content: flex-end;
+    margin-bottom: 12%;
+    background-color: transparent;
   }
 }

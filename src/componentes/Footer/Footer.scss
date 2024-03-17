@@ -61,8 +61,10 @@
     .rightN {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
     .leftN {
+      align-items: center;
       display: flex;
       flex-direction: row;
     }
@@ -84,6 +86,8 @@
       color: white;
       .footIzq {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         width: 100%;
         gap: 10px;
@@ -121,6 +125,9 @@
     padding: 0px 20px;
     .footIzq {
       flex-direction: column !important;
+      display: flex;
+      align-items: center;
+      color: #c3c3c3;
       .social-media {
         display: flex;
         width: 100%;
@@ -132,7 +139,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-
+      color: #c3c3c3;
       .phone-container {
         display: flex;
         gap: 10px;
@@ -147,11 +154,14 @@
     flex-direction: column;
     gap: 5px !important;
     .footIzq {
+      display: flex;
+      align-items: center;
       flex-direction: row !important;
       .social-media {
         display: flex;
         width: 100%;
         justify-content: center;
+        align-items: center;
         gap: 15px;
       }
     }
@@ -162,12 +172,17 @@
     .footDer {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
 
       .phone-container {
         display: flex;
         gap: 10px;
+        .svgPhone{
+          margin-top: 1px;
+        }
       }
+      
     }
   }
 }

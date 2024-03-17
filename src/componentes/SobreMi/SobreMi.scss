@@ -1,70 +1,103 @@
 #SOBREMI {
-    height: 100vh;
-    width: 100vw;
-    background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  align-items: flex-start;
+  position: relative;
+  .fix {
+    position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
+    inset: 0;
+    padding: 0 20% 0 20%;
+    // background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.548));
+    .cardSM {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      backdrop-filter: blur(15px);
+      padding: 6%;
+      flex-direction: column;
+      // background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.478));
+      background: rgba(0, 0, 0, 0.419);
+      width: 80%;
+      height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgb(0 0 0);
+    }
+  }
+  p {
+    font-size: 18px;
     color: white;
-    align-items: flex-start;
-    position: relative;
-    .fix{
-        position: absolute;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        inset: 0;
-        padding: 0 20% 0 20%;
-        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.548));
-        .cardSM{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            backdrop-filter: blur(15px);
-            padding: 6%;
-            flex-direction: column;
-            background: linear-gradient(to top, transparent, rgb(0 0 0 / 30%));
-            width: 80%;
-            height: 80%;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgb(0 0 0);
-        }
+    text-align: left;
+    span {
+      font-weight: 700;
     }
-    p {
-        font-size: 18px;
-        color: white;
-        text-align: left;
-        span {
-            font-weight: 700;
-        }
-    }
+  }
 }
 
-@media(max-width: 1000px){
-    #SOBREMI{
-       .fix{
-            padding: 0;
-            .cardSM{
-                width: 95%;
-            }
-        }
+@media (max-width: 1000px) {
+  #SOBREMI {
+    .fix {
+      padding: 0;
+      .cardSM {
+        width: 95%;
+        height: 90vh;
+      }
     }
-    
+  }
 }
-@media(max-width: 500px){
-    #SOBREMI{
-       .fix{
-            padding: 0;
-            .cardSM{
-                width: 95%;
-                p{
-                    font-size: 14px;
-                }
-            }
+@media (max-width: 598px) {
+  // preguntar lucas el max-width
+  #SOBREMI {
+    .fix {
+      padding: 0;
+      .cardSM {
+        width: 95%;
+        height: 90vh;
+        p {
+          font-size: 16px;
         }
-        
+      }
     }
-    .pDisplay{
-        display: none;
-    }
+  }
 }
+
+//Preguntar Lucas
+@media (max-width: 492px) {
+  #SOBREMI {
+    .fix {
+      padding: 0;
+      .cardSM {
+        // height: 85%;
+        width: 95%;
+        height: 90vh;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #SOBREMI {
+    .fix {
+      padding: 0;
+      .cardSM {
+        // width: 95%;
+        height: 90vh;
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
