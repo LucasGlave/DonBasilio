@@ -7,12 +7,12 @@
   flex-direction: column;
   color: white;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2rem;
   position: relative;
   iframe {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
   }
   .imgBackground {
     width: 100vw;
@@ -28,9 +28,12 @@
   }
   .calendlyCard{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    margin: 0 auto;
   }
   .desktopCalendly{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +42,12 @@
   .mobileCalendly{
     display: none;
   }
+}
+.simplebar-mask{
+  display: none;
+}
+.vijtvgyx_9152uGHndeu .g4kIX1cEbAUBf5qD2Udt .Es8downQlxiASDyltHtn {
+  display: none;
 }
 
 ._cUP1np9gMvFQrcPftuf, ._Y8HCTxgNkwxXcG_DCXx,
@@ -68,6 +77,7 @@
     align-items: center;
     justify-content: center;
   }
+  
   .textH2{
     display: none;
   }

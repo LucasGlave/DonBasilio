@@ -61,8 +61,10 @@
     .rightN {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
     .leftN {
+      align-items: center;
       display: flex;
       flex-direction: row;
     }
@@ -84,6 +86,8 @@
       color: white;
       .footIzq {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         width: 100%;
         gap: 10px;
@@ -150,11 +154,14 @@
     flex-direction: column;
     gap: 5px !important;
     .footIzq {
+      display: flex;
+      align-items: center;
       flex-direction: row !important;
       .social-media {
         display: flex;
         width: 100%;
         justify-content: center;
+        align-items: center;
         gap: 15px;
       }
     }
@@ -165,6 +172,7 @@
     .footDer {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
 
       .phone-container {
