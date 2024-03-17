@@ -11,12 +11,12 @@
   padding: 2rem;
   position: relative;
   iframe {
-    width: 80vw;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
   }
   .imgBackground {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 0;
     object-fit: cover;
@@ -27,8 +27,17 @@
     box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
   }
   .calendlyCard{
-    width: 80vw;
+    width: 100vw;
     height: 80vh;
+  }
+  .desktopCalendly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .mobileCalendly{
+    display: none;
   }
 }
 
@@ -39,22 +48,44 @@
 }
 
 @media (max-width: 1095px) {
-  iframe {
-    max-width: 100%;
-    height: 100%;
+  #SACARTURNO{
+    padding: 0;
+    margin: 0;
     display: flex;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    iframe {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+  }
+  .desktopCalendly{
+    display: none;
+  }
+  .mobileCalendly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textH2{
+    display: none;
   }
   .calendlyCard{
-    width: 90vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
   }
   .calendly-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  .imgBackground {
+    display: none;
   }
   .calendly-container::-webkit-scrollbar {
     width: 0px !important; 
@@ -66,4 +97,6 @@
   iframe::-webkit-scrollbar-thumb {
     background-color: transparent !important; 
   }
+  }
+  
 }

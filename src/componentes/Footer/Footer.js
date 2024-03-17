@@ -1,4 +1,3 @@
-import Reveal from "../Reveal";
 import "./Footer.scss";
 import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 
@@ -7,7 +6,6 @@ import FooterResponsive from "./FooterResponsive";
 const Footer = () => {
   return (
     <div className="footer-back">
-      <Reveal>
         <div className="footer-desktop">
           <div className="footIzq">
             <h6>
@@ -18,7 +16,9 @@ const Footer = () => {
             </h6>
             <h6>donbasilio@gmail.com</h6>
             <div className="phone-container">
-              <FaPhone />
+              <div className="svgPhone">
+                <FaPhone />
+              </div>
               <h6> +54 2923 000000</h6>
             </div>
           </div>
@@ -41,7 +41,6 @@ const Footer = () => {
           </div>
         </div>
         <FooterResponsive />
-      </Reveal>
     </div>
   );
 };
