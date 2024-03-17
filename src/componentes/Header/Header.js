@@ -65,7 +65,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      {/* navbar responsive */}
       <OffcanvasExample />
     </motion.div>
   );
