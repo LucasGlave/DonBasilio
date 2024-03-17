@@ -18,7 +18,14 @@ const HomePage = () =>{
                                 <h1 className='don'>DON</h1>
                                 <h1 className='basilio'>BASILIO</h1>
                             </div>
-                            <Typewriter />
+                            <div className='responsiveDesktop'>
+                                <Typewriter />
+                            </div>
+                            <div className='responsiveMobile'>
+                                <h3>
+                                    UN LUGAR DEDICADO A LA IMAGEN DE ELLOS.
+                                </h3>
+                            </div>
                         </div>
                     </div>
                     <div className='content-right'>
