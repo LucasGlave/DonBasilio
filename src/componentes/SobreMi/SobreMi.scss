@@ -15,8 +15,7 @@
     justify-content: center;
     flex-direction: column;
     inset: 0;
-    padding: 0 20% 0 20%;
-    // background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.548));
+    padding: 0 10%;
     .cardSM {
       display: flex;
       align-items: center;
@@ -24,7 +23,6 @@
       backdrop-filter: blur(15px);
       padding: 6%;
       flex-direction: column;
-      // background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.478));
       background: rgba(0, 0, 0, 0.419);
       width: 80%;
       height: 80%;
@@ -51,10 +49,12 @@
         height: 90vh;
       }
     }
+    .pDisplay{
+      display: none;
+    }
   }
 }
 @media (max-width: 598px) {
-  // preguntar lucas el max-width
   #SOBREMI {
     .fix {
       padding: 0;
@@ -69,13 +69,11 @@
   }
 }
 
-//Preguntar Lucas
 @media (max-width: 492px) {
   #SOBREMI {
     .fix {
       padding: 0;
       .cardSM {
-        // height: 85%;
         width: 95%;
         height: 90vh;
         p {
@@ -91,7 +89,6 @@
     .fix {
       padding: 0;
       .cardSM {
-        // width: 95%;
         height: 90vh;
         p {
           font-size: 12px;

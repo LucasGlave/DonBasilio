@@ -17,6 +17,7 @@ function FooterResponsive() {
       <div className="footDer">
         <div className="phone-container">
           <h6>Lucas Glave</h6>
+          <h6>-</h6>
           <h6>Franco Prandi</h6>
         </div>
       </div>
