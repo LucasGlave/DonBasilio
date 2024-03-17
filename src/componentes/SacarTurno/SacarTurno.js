@@ -12,11 +12,9 @@ const SacarTurno = () => {
         </Reveal>
       </div>
       <div className="desktopCalendly">
-        {/* <Reveal> */}
           <div className="calendlyCard">
             <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
           </div>
-        {/* </Reveal> */}
       </div>
       
       <div className="mobileCalendly">

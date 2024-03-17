@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  .center{
+    text-align: center;
+  }
   .fondo{
     display: flex;
     flex-direction: column;
