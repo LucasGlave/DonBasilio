@@ -11,6 +11,7 @@
     h2 {
         margin-top: 130px;
     }
+    
     .div-img {
         justify-content: center;
         align-items: center;
@@ -145,10 +146,23 @@ h2 {
   .imgResponsive {
     display: none;
   }
+  .responsiveMobile{
+    display: none;
+}
 }
 
 @media (max-width: 768px) {
   .imgS {
+    display: none;
+  }
+  .responsiveMobile{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .responsiveDesktop{
     display: none;
   }
   .imgResponsive {
@@ -169,4 +183,10 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+    .responsiveMobile{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem;
+      }
 }
