@@ -7,9 +7,6 @@
     color: white;
     align-items: center;
     position: relative;
-    h2 {
-        margin-top: 130px;
-    }
     .div-img {
         justify-content: center;
         align-items: center;
@@ -38,7 +35,7 @@
         width: 100vw;
         z-index: 10;
         h3{
-            -webkit-text-stroke:0.5px #000;
+            // -webkit-text-stroke:0.5px #000;
             font-weight: 800;
             filter: drop-shadow(0 0 0.75rem black);
         }

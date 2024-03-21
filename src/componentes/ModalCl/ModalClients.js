@@ -14,8 +14,8 @@ const ModalCl = () => {
 
   return (
     <div className="modalCliente">
-      <button onClick={handleShow} className="verMas">
-        CLIENTES
+      <button onClick={handleShow} className="button1">
+        VER
       </button>
       <Modal show={show} onHide={handleClose} className="modalFlex" size="xl">
         <Modal.Header  onClick={handleClose}>

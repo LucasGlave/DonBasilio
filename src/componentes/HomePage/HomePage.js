@@ -1,7 +1,8 @@
 import './HomePage.scss'
 import Reveal from '../Reveal';
 import Typewriter from '../Typewriter';
-import ModalCl from '../ModalCl/ModalCl';
+import ModalClients from '../ModalCl/ModalClients';
+import ModalCalendly from '../ModalCl/ModalCalendly';
 
 const HomePage = () =>{
     return(
@@ -29,10 +30,14 @@ const HomePage = () =>{
                         </div>
                     </div>
                     <div className='content-right'>
-                        <a data-scroll="SACARTURNO" href="#SACARTURNO" className="active button1">
+                        {/* <a data-scroll="SACARTURNO" href="#SACARTURNO" className="active button1">
                             SACAR TURNO
+                        </a> */}
+                        <ModalCalendly />
+                        {/* <ModalClients /> */}
+                        <a data-scroll="CLIENTES" href="#CLIENTES" className="active button1">
+                            CLIENTES
                         </a>
-                        <ModalCl />
                     </div>
                 </div>
             </Reveal>
