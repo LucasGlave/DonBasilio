@@ -43,6 +43,18 @@
     display: none;
   }
 }
+.imgBackground {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  filter: blur(0px);
+  box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
+}
 .simplebar-mask{
   display: none;
 }
@@ -155,4 +167,23 @@
     margin: 0;
   }
 }
+}
+
+//////////////////
+
+#SACARTURNOMODAL {
+  height: 100%;
+  width: 100%;
+  // background: #0000003e;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+  iframe {
+    width: 100vw;
+    height: 100vh;
+  }
 }

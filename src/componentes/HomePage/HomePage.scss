@@ -1,17 +1,12 @@
 #CLIENTES {
     height: 100vh;
     width: 100vw;
-    // background: -webkit-linear-gradient(bottom, #614c3b, #7d624f, #614c3b);
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: white;
     align-items: center;
     position: relative;
-    h2 {
-        margin-top: 130px;
-    }
-    
     .div-img {
         justify-content: center;
         align-items: center;
@@ -39,6 +34,11 @@
         height: 100%;
         width: 100vw;
         z-index: 10;
+        h3{
+            // -webkit-text-stroke:0.5px #000;
+            font-weight: 800;
+            filter: drop-shadow(0 0 0.75rem black);
+        }
         .content-left {
             width: 100%;
             .title{
@@ -121,7 +121,6 @@ h2 {
   z-index: 1;
   -webkit-text-stroke:0.5px #000;
 }
-
 .verMas {
     width: 12rem;
     height: 50px;
@@ -136,45 +135,60 @@ h2 {
     -webkit-backdrop-filter: grayscale(15px);
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-  
 .verMas:hover{
     background: #00000087;
     border: 1px solid #7d5d42;
 }
-
 @media (min-width: 769px) {
-  .imgResponsive {
-    display: none;
-  }
-  .responsiveMobile{
-    display: none;
-}
+    .imgResponsive {
+        display: none;
+    }
+    .responsiveMobile{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-  .imgS {
-    display: none;
-  }
-  .responsiveMobile{
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  .responsiveDesktop{
-    display: none;
-  }
-  .imgResponsive {
-    width: 100%;
-    height: 100%;
-    filter: blur(3px);
-    position: absolute;
-    z-index: 0;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-  }
+    .imgS {
+        display: none;
+    }
+    .responsiveMobile{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .responsiveDesktop{
+        display: none;
+    }
+    .imgResponsive {
+        width: 100%;
+        height: 100%;
+        filter: blur(3px);
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+    #CLIENTES {
+        .sm-content {
+            .content-left{
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .don {
+                        margin: 0;
+                    }
+                    .basilio {
+                        margin: 0;
+                    }
+                } 
+            }
+        }
+    }
 }
 
 @media (max-width: 720px){
@@ -188,5 +202,9 @@ h2 {
         text-align: center;
         justify-content: center;
         padding: 1rem;
-      }
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
 }
