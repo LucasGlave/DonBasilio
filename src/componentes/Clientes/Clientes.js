@@ -2,6 +2,7 @@ import './Clientes.scss'
 // import { Button } from 'react-bootstrap'
 import ModalCl from '../ModalCl/ModalClients'
 import Reveal from '../Reveal'
+import HairdresserCard from '../HairdresserCards/HairdresserCard'
 
 
 const Clientes = () =>{
@@ -20,6 +21,7 @@ const Clientes = () =>{
                         {/* <img src='./IMG_3294.webp' width="500" height="600" alt='img3'></img> */}
                     </div>
                     <ModalCl/>
+                    {/* <HairdresserCard />  */}
                 </div>
             </Reveal>
         </section>
