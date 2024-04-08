@@ -44,6 +44,22 @@
     margin: auto;
   }
 }
+.modal-calendly{
+  position: relative;
+}
+.buttonBack{
+  position: absolute;
+  top: 9%;
+  left: 0;
+  background-color: transparent;
+  color: #fff;
+  fill: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
 
 .modal-header {
   border-bottom: none;
@@ -70,6 +86,9 @@
       object-fit: cover;
     }
   }
+  .buttonBack{
+    color: #000;
+  }
 }
 
 //Preguntar lucas
@@ -93,6 +112,16 @@
     justify-content: flex-end;
     margin-bottom: 12%;
     background-color: transparent;
+  }
+  .modalFlex{
+    .buttonBack{
+      border-radius: 10px;
+      border: 1px solid #000;
+      top: 5%;
+      backdrop-filter: blur(20px);
+      fill: #000;
+      color: #000;
+    }
   }
 }
 
