@@ -1,12 +1,12 @@
 import './HomePage.scss'
 import Reveal from '../Reveal';
 import Typewriter from '../Typewriter';
-import ModalClients from '../ModalCl/ModalClients';
+// import ModalClients from '../ModalCl/ModalClients';
 import ModalCalendly from '../ModalCl/ModalCalendly';
 
 const HomePage = () =>{
     return(
-        <section id='CLIENTES'>
+        <section id='HOME'>
             <div className='div-img'>
                 <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
                 <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/> 

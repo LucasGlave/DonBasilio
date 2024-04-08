@@ -8,24 +8,39 @@ const Footer = () => {
     <div className="footer-back">
         <div className="footer-desktop">
           <div className="footIzq">
-            <h6>
-              <FaFacebook />
-            </h6>
-            <h6>
-              <FaInstagram />
-            </h6>
-            <h6>donbasilio@gmail.com</h6>
-            <div className="phone-container">
-              <div className="svgPhone">
-                <FaPhone />
-              </div>
-              <h6> +54 2923 000000</h6>
+            <div className="nav-footer">
+              <a href="">
+                <h6><FaFacebook /></h6>
+              </a>
+              <a href="">
+                <h6>
+                  <FaInstagram />
+                </h6>
+              </a>
+              <a href="">
+                <div className="gmail">
+                  <h6>
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </h6>
+                  <h6>
+                    donbasilio@gmail.com
+                  </h6>
+                </div>
+              </a>
+              <a href="">
+                <div className="phone-container">
+                  <div className="svgPhone">
+                      <h6><FaPhone /></h6>
+                  </div>
+                    <h6> +54 2923 000000</h6>
+                </div>
+              </a>
             </div>
           </div>
           <img src="./favicon.ico" alt="img2" className="logo-footer"></img>
           <div className="footDer">
             <div className="nav-footer">
-              <a data-scroll="SOBREMI" href="#SOBREMI" className="active">
+              <a data-scroll="SOBREMI" href="#SOBREMI">
                 <h6>SOBRE MI</h6>
               </a>
               <a data-scroll="SACARTURNO" href="#SACARTURNO">
