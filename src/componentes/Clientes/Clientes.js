@@ -17,8 +17,8 @@ const Clientes = () =>{
             <Reveal>
                 <div className='fotos'>
                     <div className='images'>
-                        <img src='./IMG_3293.webp' alt='img2'></img>
-                        {/* <img src='./IMG_3294.webp' width="500" height="600" alt='img3'></img> */}
+                        <img src='./IMG_3293.webp' alt='img1'></img>
+                        <img src='./IMG_3294.webp' alt='img2' className='img2'></img>
                     </div>
                     <ModalCl/>
                     {/* <HairdresserCard />  */}
