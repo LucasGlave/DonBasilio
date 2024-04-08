@@ -24,6 +24,9 @@ const ModalCalendly = () => {
               </svg>
               VOLVER
             </button>
+            <button onClick={handleClose} className="buttonInicio">
+              INICIO
+            </button>
       </Modal>
     </div>
 
