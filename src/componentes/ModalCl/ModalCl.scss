@@ -49,7 +49,7 @@
 }
 .buttonBack{
   position: absolute;
-  top: 9%;
+  top: 3%;
   left: 0;
   background-color: transparent;
   color: #fff;
@@ -86,9 +86,6 @@
       object-fit: cover;
     }
   }
-  .buttonBack{
-    color: #000;
-  }
 }
 
 //Preguntar lucas
@@ -112,16 +109,6 @@
     justify-content: flex-end;
     margin-bottom: 12%;
     background-color: transparent;
-  }
-  .modalFlex{
-    .buttonBack{
-      border-radius: 10px;
-      border: 1px solid #000;
-      top: 5%;
-      backdrop-filter: blur(20px);
-      fill: #000;
-      color: #000;
-    }
   }
 }
 
@@ -158,6 +145,19 @@
 // }
 
 //Mostrar Lucas
+@media (max-width: 650px) {
+  .modalFlex{
+    .buttonBack{
+      border-radius: 10px;
+      background: linear-gradient(90deg,transparent, #9595954a, transparent);
+      position: fixed;
+      top: 8%;
+      backdrop-filter: blur(20px);
+      fill: #000;
+      color: #000;
+    }
+  }
+}
 @media (max-width: 510px) {
   .modal-content {
     padding: 0;
@@ -178,6 +178,11 @@
       height: 400px;
       margin-top: 0;
       object-fit: contain;
+    }
+  }
+  .modalFlex{
+    .buttonBack{
+      top: 5%;
     }
   }
 }
