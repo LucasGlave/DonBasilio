@@ -8,7 +8,7 @@ const SacarTurno = () => {
       <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
       <div className="textH2">
         <Reveal >
-          <h2>- SACAR TURNO -</h2>
+          <h2>- CLIENTES -</h2>
         </Reveal>
       </div>
       <div className="desktopCalendly">

@@ -6,6 +6,7 @@ import SacarTurno from './componentes/SacarTurno/SacarTurno';
 import Ubicacion from './componentes/Ubicacion/Ubicacion';
 import HomePage from './componentes/HomePage/HomePage';
 import SobreMi from './componentes/SobreMi/SobreMi';
+import Clientes from './componentes/Clientes/Clientes';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Footer/>
       <HomePage/>
       <SobreMi/>
-      <SacarTurno/>
+      {/* <SacarTurno/> */}
+      <Clientes />
       <div>
         <Ubicacion/>
         <Header/>
