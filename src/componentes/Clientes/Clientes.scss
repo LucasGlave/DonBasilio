@@ -20,8 +20,8 @@
       gap: 5%;
       position: relative;
       img {
-        width: 25%;
-        height: 25%;
+        width: 35%;
+        height: 35%;
         border-radius: 15px;
         position: relative;
         object-fit: cover;
@@ -66,33 +66,21 @@
     gap: 30px;
     .images{
         img{
-            width: 20% !important;
-            height: 20% !important;
+            width: 35% !important;
+            height: 35% !important;
         }
     }
   }
 }
 
-@media (min-width: 900px) and (max-width: 1000px) {
-    #CLIENTES{
-      gap: 30px;
-      .images{
-          img{
-              width: 30% !important;
-              height: 30% !important;
-          }
-      }
-    }
-  }
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     #CLIENTES{
         gap: 20px !important;
     }
   .images {
     img {
-      width: 35% !important;
-      height: 35% !important;
+      width: 40% !important;
+      height: 40% !important;
     }
   }
 }
@@ -102,9 +90,10 @@
         gap: 20px !important;
     }
   .images {
+    height: 100%;
     img {
-      width: 50% !important;
-      height: 50% !important;
+      width: 80% !important;
+      height: 100% !important;
     }
     .img2 {
       display: none;
