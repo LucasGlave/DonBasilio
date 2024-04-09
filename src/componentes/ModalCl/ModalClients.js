@@ -15,16 +15,16 @@ const ModalCl = () => {
   return (
     <div className="modalCliente">
       <button onClick={handleShow} className="button1">
-        CLIENTES
+        VER
       </button>
       <Modal show={show} onHide={handleClose} size="xl">
-        <Modal.Header  onClick={handleClose}>
+        <Modal.Header onClick={handleClose}>
           <div className="headerContainer">
             <IoClose className="closeModalButton" onClick={handleClose} />
           </div>
         </Modal.Header>
         <img src="./favicon.ico" alt="img2" className="logo"></img>
-        <Row className="two-columns-grid"  onClick={handleClose}>
+        <Row className="two-columns-grid" onClick={handleClose}>
           <Col md={6}>
             <Reveal>
               <Modal.Body>
