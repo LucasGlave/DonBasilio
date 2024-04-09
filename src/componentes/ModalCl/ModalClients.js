@@ -15,7 +15,7 @@ const ModalCl = () => {
   return (
     <div className="modalCliente">
       <button onClick={handleShow} className="button1">
-        VER
+        CLIENTES
       </button>
       <Modal show={show} onHide={handleClose} size="xl">
         <Modal.Header  onClick={handleClose}>

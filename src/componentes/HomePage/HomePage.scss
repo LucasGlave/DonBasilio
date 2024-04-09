@@ -100,8 +100,8 @@
                 width: 12rem;
                 height: 50px;
                 background: #0000005c;
-                color: #fff;
-                border: 1px solid #fff;
+                color: #b58c6b;
+                border: 1px solid #b58c6b;
                 border-radius: 13px;
                 backdrop-filter: blur(15px);
                 outline: none;
@@ -110,6 +110,27 @@
                 transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
             }
             .button1:hover{
+                background: #00000087;
+                border: 1px solid #9f745378;
+            }
+            .button2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 12rem;
+                height: 50px;
+                background: #0000005c;
+                color: white;
+                border: 1px solid white;
+                border-radius: 13px;
+                backdrop-filter: blur(15px);
+                outline: none;
+                cursor: pointer;
+                font-weight: 700;
+                transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+            }
+            .button2:hover{
                 background: #00000087;
                 border: 1px solid #9c9c9c;
             }

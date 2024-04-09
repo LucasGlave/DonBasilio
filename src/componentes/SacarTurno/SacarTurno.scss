@@ -10,10 +10,6 @@
   justify-content: space-between;
   padding: 2rem;
   position: relative;
-  iframe {
-    width: 100vw;
-    height: 100vh;
-  }
   .imgBackground {
     width: 100vw;
     height: 100vh;
@@ -26,46 +22,57 @@
     filter: blur(0px);
     box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
   }
-  .calendlyCard{
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-  }
-  .desktopCalendly{
-    width: 100vw;
-    height: 100vh;
+  .cards{
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    .card{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: none;
+      border-radius: 15px;
+      width: 30%;
+      height: 80%;
+      .infoHover {
+        opacity: 0;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(transparent, black);
+        padding: 20px;
+        border-radius: 15px;
+        transition: opacity 0.3s ease-in-out;
+        h3 {
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      .infoHover.visible {
+        z-index: 100;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      img{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
-  .mobileCalendly{
-    display: none;
-  }
-}
-.imgBackground {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 0;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  filter: blur(0px);
-  box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
-}
-.simplebar-mask{
-  display: none;
-}
-.vijtvgyx_9152uGHndeu .g4kIX1cEbAUBf5qD2Udt .Es8downQlxiASDyltHtn {
-  display: none;
-}
-
-._cUP1np9gMvFQrcPftuf, ._Y8HCTxgNkwxXcG_DCXx,
-._cUP1np9gMvFQrcPftuf, .xahN8AEzyAvQtVj17TPv {
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 @media (max-width: 1095px) {
@@ -76,50 +83,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    iframe {
-    max-width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin: 0;
+    .textH2{
+      display: none;
+    }
   }
-  .desktopCalendly{
-    display: none;
-  }
-  .mobileCalendly{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .textH2{
-    display: none;
-  }
-  .calendlyCard{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container::-webkit-scrollbar {
-    width: 0px !important; 
-  }
-  iframe::-webkit-scrollbar {
-    width: 0px !important; 
-  }
-  iframe::-webkit-scrollbar-thumb {
-    background-color: transparent !important; 
-  }
-  }
-  
 }
 @media (max-width: 650px){
   #SACARTURNO{
@@ -133,40 +100,10 @@
     .imgBackground {
       display: none;
     }
-    iframe {
-    max-width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin: 0;
+    .textH2{
+      display: none;
+    }
   }
-  .desktopCalendly{
-    display: none;
-  }
-  .mobileCalendly{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-  }
-  .textH2{
-    display: none;
-  }
-  .calendlyCard{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-}
 }
 
 //////////////////
@@ -182,8 +119,4 @@
   justify-content: space-between;
   padding: 2rem;
   position: relative;
-  iframe {
-    width: 100vw;
-    height: 100vh;
-  }
 }
