@@ -25,5 +25,5 @@ const SacarTurno = () => {
     </section>
   );
 };
-
+ 
 export default SacarTurno;
