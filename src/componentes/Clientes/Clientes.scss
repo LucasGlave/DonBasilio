@@ -8,10 +8,17 @@
   color: white;
   align-items: center;
   justify-content: space-evenly;
+  h2{
+    font-size: 70px;
+  }
   .fotos {
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+
     .images {
       display: flex;
       justify-content: center;
@@ -19,6 +26,7 @@
       flex-direction: row;
       gap: 5%;
       position: relative;
+      width: 70%;
       img {
         width: 35%;
         height: 35%;
@@ -29,14 +37,14 @@
       }
     }
   }
-  .fotos {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    position: relative;
-    justify-content: space-evenly;
-  }
+  // .fotos {
+  //   border-radius: 20px;
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 50px;
+  //   position: relative;
+  //   justify-content: space-evenly;
+  // }
 }
 .button1 {
   display: flex;
@@ -61,42 +69,45 @@
   border: 1px solid #9c9c9c;
 }
 
-@media (min-width: 1400px) and (max-width: 1650px) {
-  #CLIENTES{
-    gap: 30px;
-    .images{
-        img{
-            width: 35% !important;
-            height: 35% !important;
-        }
-    }
-  }
-}
+// @media (min-width: 1400px) and (max-width: 1650px) {
+//   #CLIENTES {
+//     gap: 30px;
+//     .images {
+      
+//       img {
+//         width: 45% !important;
+//         height: 35% !important;
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 1000px) {
-    #CLIENTES{
-        gap: 20px !important;
-    }
+@media (max-width: 1150px) {
+  #CLIENTES {
+    gap: 20px !important;
+  }
   .images {
     img {
-      width: 40% !important;
-      height: 40% !important;
+      width: 50% !important;
     }
   }
 }
 
 @media (max-width: 650px) {
-    #CLIENTES{
-        gap: 20px !important;
-    }
+  #CLIENTES {
+    // gap: 20px !important;
+  }
   .images {
-    height: 100%;
+    
     img {
-      width: 80% !important;
-      height: 100% !important;
+      width: 100% !important;
+     scale: 1.4;
     }
     .img2 {
       display: none;
     }
+  }
+  .modalButton{
+    margin-top: 50px !important;
   }
 }

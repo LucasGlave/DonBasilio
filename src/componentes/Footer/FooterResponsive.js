@@ -17,9 +17,7 @@ function FooterResponsive() {
               <h6>
                 <ion-icon name="mail-outline"></ion-icon>
               </h6>
-              <h6>
-                donbasilio@gmail.com
-              </h6>
+              <h6>donbasilio@gmail.com</h6>
             </div>
           </a>
           <a href="">
@@ -32,14 +30,12 @@ function FooterResponsive() {
       <div className="footDer">
         <div className="nav-footer">
           <div className="phone-container">
-            <h6>Lucas Glave</h6>
-            <h6>-</h6>
-            <h6>Franco Prandi</h6>
+            <p className="designedBy">
+              designed by <span>SeptemDev Studio</span>
+            </p>
           </div>
         </div>
       </div>
-
-        
     </div>
   );
 }
