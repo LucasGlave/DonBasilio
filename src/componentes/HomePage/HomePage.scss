@@ -141,6 +141,24 @@ h2 {
     background: #00000087;
     border: 1px solid #7d5d42;
 }
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    z-index: 9998;
+    img {
+      z-index: 9999;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 @media (min-width: 769px) {
     .imgResponsive {
         display: none;

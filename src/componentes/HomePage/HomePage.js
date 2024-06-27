@@ -3,6 +3,7 @@ import Reveal from '../Reveal';
 import Typewriter from '../Typewriter';
 // import ModalClients from '../ModalCl/ModalClients';
 import ModalCalendly from '../ModalCl/ModalCalendly';
+import whatsapp from '../../assets/Whatsapp.webp'
 
 const HomePage = () =>{
     return(
@@ -11,6 +12,9 @@ const HomePage = () =>{
                 <img src='./IMG_3330.webp' alt='imgS'className='imgS'/>
                 <img src='./IMG_3331.webp' alt='imgS'className='imgResponsive'/> 
             </div>
+            <a href="https://wa.me/XXXXXXXXXX" className='whatsapp' target='e_blank'>
+                <img src={whatsapp} alt="WhatsApp"/>
+            </a>
             <Reveal>
                 <div className='sm-content'>
                     <div className='content-left'>
