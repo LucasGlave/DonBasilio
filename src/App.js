@@ -7,6 +7,7 @@ import Ubicacion from './componentes/Ubicacion/Ubicacion';
 import HomePage from './componentes/HomePage/HomePage';
 import SobreMi from './componentes/SobreMi/SobreMi';
 import Clientes from './componentes/Clientes/Clientes';
+import Products from './componentes/Products/Products';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SobreMi/>
       {/* <SacarTurno/> */}
       <Clientes />
+      <Products />
       <div>
         <Ubicacion/>
         <Header/>
