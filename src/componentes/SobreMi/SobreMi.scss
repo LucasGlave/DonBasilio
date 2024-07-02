@@ -40,16 +40,31 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .fix {
+    padding: 0;
+    .cardSM {
+      height: 100% !important;
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   #SOBREMI {
     .fix {
       padding: 0;
       .cardSM {
-        width: 95%;
-        height: 90vh;
+        width: 85%;
+        height: 100% !important;
+        p {
+          font-size: 18px;
+        }
       }
     }
-    .pDisplay{
+    .pDisplay {
       display: none;
     }
   }
@@ -59,8 +74,7 @@
     .fix {
       padding: 0;
       .cardSM {
-        width: 95%;
-        height: 90vh;
+        height: 100% !important;
         p {
           font-size: 16px;
         }
@@ -75,9 +89,9 @@
       padding: 0;
       .cardSM {
         width: 95%;
-        height: 90vh;
+        height: 100% !important; 
         p {
-          font-size: 14px;
+          font-size: 14px !important;
         }
       }
     }
@@ -89,12 +103,12 @@
     .fix {
       padding: 0;
       .cardSM {
-        height: 90vh;
+        width: 95%;
+        height: 100% !important;
         p {
-          font-size: 12px;
+          font-size: 14px !important ;
         }
       }
     }
   }
 }
-

@@ -6,7 +6,7 @@ const Ubicacion = () =>{
     return(
         <section id='UBICACION'>
             <div className='center'>
-                <h2>- UBICACION -</h2>
+                <h2>UBICACION</h2>
             </div>
             <div className='fondo'>
                 <div className='center'>

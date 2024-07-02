@@ -12,7 +12,7 @@ const Clientes = () =>{
         <section id='CLIENTES'>
             <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
             <Reveal>
-               <h2>- CLIENTES -</h2> 
+               <h2>CLIENTES</h2> 
             </Reveal>
             <Reveal>
                 <div className='fotos'>

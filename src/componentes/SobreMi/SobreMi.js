@@ -7,7 +7,7 @@ const SobreMi = () => {
     <section id='SOBREMI'>
         <div className='fix'>
             <div className='cardSM'>
-              <h2>- SOBRE MI -</h2>
+              <h2>SOBRE MI</h2>
               <div>
                 <Reveal>
                   <p>

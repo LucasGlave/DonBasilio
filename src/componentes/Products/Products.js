@@ -8,7 +8,7 @@ function Products() {
   return (
     <div className="productsContainer">
       <Reveal>
-        <h2>- PRODUCTOS -</h2>
+        <h2>PRODUCTOS</h2>
       </Reveal>
       <div className="individualContainer">
         {products.map((producto, index) => (
