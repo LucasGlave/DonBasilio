@@ -1,7 +1,7 @@
-import './App.scss';
-import Footer from './componentes/Header/Header';
-import Header from './componentes/Footer/Footer';
-import SacarTurno from './componentes/SacarTurno/SacarTurno';
+import "./App.scss";
+import Footer from "./componentes/Header/Header";
+import Header from "./componentes/Footer/Footer";
+import SacarTurno from "./componentes/SacarTurno/SacarTurno";
 // import Clientes from './componentes/Clientes/Clientes';
 import Ubicacion from './componentes/Ubicacion/Ubicacion';
 import HomePage from './componentes/HomePage/HomePage';
@@ -12,15 +12,15 @@ import Products from './componentes/Products/Products';
 function App() {
   return (
     <div className="App">
-      <Footer/>
-      <HomePage/>
-      <SobreMi/>
+      <Footer />
+      <HomePage />
+      <SobreMi />
       {/* <SacarTurno/> */}
       <Clientes />
       <Products />
       <div>
-        <Ubicacion/>
-        <Header/>
+        <Ubicacion />
+        <Header />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-
 #SACARTURNO {
   height: 100vh;
   width: 100vw;
@@ -26,12 +25,12 @@
     filter: blur(0px);
     box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
   }
-  .calendlyCard{
+  .calendlyCard {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
   }
-  .desktopCalendly{
+  .desktopCalendly {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -39,7 +38,7 @@
     justify-content: center;
     position: relative;
   }
-  .mobileCalendly{
+  .mobileCalendly {
     display: none;
   }
 }
@@ -55,21 +54,23 @@
   filter: blur(0px);
   box-shadow: 0 -10px 20px rgb(0, 0, 0), 5px 10px 20px rgb(0, 0, 0);
 }
-.simplebar-mask{
+.simplebar-mask {
   display: none;
 }
 .vijtvgyx_9152uGHndeu .g4kIX1cEbAUBf5qD2Udt .Es8downQlxiASDyltHtn {
   display: none;
 }
 
-._cUP1np9gMvFQrcPftuf, ._Y8HCTxgNkwxXcG_DCXx,
-._cUP1np9gMvFQrcPftuf, .xahN8AEzyAvQtVj17TPv {
-    margin: 0 !important;
-    padding: 0 !important;
+._cUP1np9gMvFQrcPftuf,
+._Y8HCTxgNkwxXcG_DCXx,
+._cUP1np9gMvFQrcPftuf,
+.xahN8AEzyAvQtVj17TPv {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 @media (max-width: 1095px) {
-  #SACARTURNO{
+  #SACARTURNO {
     padding: 0;
     margin: 0;
     display: flex;
@@ -77,52 +78,51 @@
     justify-content: center;
     position: relative;
     iframe {
-    max-width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin: 0;
+      max-width: 100vw;
+      height: 100vh;
+      display: flex;
+      margin: 0;
+    }
+    .desktopCalendly {
+      display: none;
+    }
+    .mobileCalendly {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .textH2 {
+      display: none;
+    }
+    .calendlyCard {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+    .calendly-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+    .calendly-container::-webkit-scrollbar {
+      width: 0px !important;
+    }
+    iframe::-webkit-scrollbar {
+      width: 0px !important;
+    }
+    iframe::-webkit-scrollbar-thumb {
+      background-color: transparent !important;
+    }
   }
-  .desktopCalendly{
-    display: none;
-  }
-  .mobileCalendly{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .textH2{
-    display: none;
-  }
-  .calendlyCard{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container::-webkit-scrollbar {
-    width: 0px !important; 
-  }
-  iframe::-webkit-scrollbar {
-    width: 0px !important; 
-  }
-  iframe::-webkit-scrollbar-thumb {
-    background-color: transparent !important; 
-  }
-  }
-  
 }
-@media (max-width: 650px){
-  #SACARTURNO{
+@media (max-width: 650px) {
+  #SACARTURNO {
     background: transparent;
     padding: 0;
     margin: 0;
@@ -134,39 +134,39 @@
       display: none;
     }
     iframe {
-    max-width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin: 0;
+      max-width: 100vw;
+      height: 100vh;
+      display: flex;
+      margin: 0;
+    }
+    .desktopCalendly {
+      display: none;
+    }
+    .mobileCalendly {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+    }
+    .textH2 {
+      display: none;
+    }
+    .calendlyCard {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+    .calendly-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
   }
-  .desktopCalendly{
-    display: none;
-  }
-  .mobileCalendly{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-  }
-  .textH2{
-    display: none;
-  }
-  .calendlyCard{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-  .calendly-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-}
 }
 
 //////////////////

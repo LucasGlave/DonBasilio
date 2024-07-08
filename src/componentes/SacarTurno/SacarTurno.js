@@ -5,18 +5,18 @@ import { InlineWidget } from "react-calendly";
 const SacarTurno = () => {
   return (
     <section id="SACARTURNO">
-      <img src='./BackgroundRustic.jpg' alt='imgS'className='imgBackground'/>
+      <img src="./BackgroundRustic.jpg" alt="imgS" className="imgBackground" />
       <div className="textH2">
-        <Reveal >
+        <Reveal>
           <h2>CLIENTES</h2>
         </Reveal>
       </div>
       <div className="desktopCalendly">
-          <div className="calendlyCard">
-            <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
-          </div>
+        <div className="calendlyCard">
+          <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
+        </div>
       </div>
-      
+
       <div className="mobileCalendly">
         <div className="calendlyCard">
           <InlineWidget url="https://calendly.com/donbasilio/corte-de-pelo" />
@@ -25,5 +25,5 @@ const SacarTurno = () => {
     </section>
   );
 };
- 
+
 export default SacarTurno;
